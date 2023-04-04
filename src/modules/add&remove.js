@@ -2,6 +2,7 @@
 let tasksToDo = JSON.parse(localStorage.getItem('tasksToDo')) || [];
 
 const taskList = document.getElementById('tasksList');
+const newTask = document.getElementById('taskInput');
 
 /* Rendering Task List */
 const renderList = () => {
@@ -23,7 +24,6 @@ const renderList = () => {
 };
 
 /* Add To List */
-const newTask = document.getElementById('taskInput');
 const addToList = (e) => {
   if (newTask.value === '') return;
   if (e.key === 'Enter' || e === 'clicked') {

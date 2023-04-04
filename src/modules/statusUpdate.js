@@ -7,7 +7,7 @@ const checkedBox = ({ index, status }) => {
 };
 
 const removeCompletedTasks = () => {
-  const uncompletedTodos = tasksToDo.filter((element) => element.completed !== true);
+  const uncompletedTodos = tasksToDo.filter((element) => element.completed === false);
   const newTodos = uncompletedTodos.map((element, index) => {
     element.index = index + 1;
     return element;

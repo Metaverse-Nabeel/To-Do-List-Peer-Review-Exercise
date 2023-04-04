@@ -9,6 +9,7 @@ import {
 const taskContainer = document.getElementById('tasksList');
 const newTask = document.getElementById('taskInput');
 const submitTask = document.getElementById('submitTask');
+const clearBtn = document.getElementById('clearBtn');
 
 /* Add To List */
 newTask.addEventListener('keypress', (e) => {
@@ -47,8 +48,6 @@ taskContainer.addEventListener('click', (event) => {
 });
 
 /* Delete completed tasks */
-const clearBtn = document.getElementById('clearBtn');
-
 clearBtn.addEventListener('click', () => {
   removeCompletedTasks();
 });
